@@ -1,0 +1,9 @@
+{
+  "name": "react-test-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/react-test-e2e/src",
+  "implicitDependencies": ["react-test"],
+  "// targets": "to see all targets run: nx show project react-test-e2e --web",
+  "targets": {}
+}

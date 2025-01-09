@@ -5,9 +5,14 @@
  Delete this file and get started with your project!
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
+import {TextBox, UiKit, MentorCard} from "@package/ui-kit";
+
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
+      <UiKit />
+      <TextBox />
+      <MentorCard />
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -454,7 +459,7 @@ export function NxWelcome({ title }: { title: string }) {
                 </svg>
                 <span>You&apos;re up and running</span>
               </h2>
-              <a href="#commands"> What&apos;s next? </a>
+              <a href="/commands"> What&apos;s next? </a>
             </div>
             <div className="logo-container">
               <svg

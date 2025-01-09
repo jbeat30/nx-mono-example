@@ -1,5 +1,5 @@
 'use client';
-import { MentorCard, Button, StepList } from '@package/ui-kit';
+import { Button, StepList } from '@package/ui-kit';
 
 export default function Index() {
   /*
@@ -45,7 +45,6 @@ export default function Index() {
             callback={() => handleAlert('테스터')}
           />
         </div>
-        <MentorCard />
       </div>
     </div>
   );

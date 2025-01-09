@@ -5,14 +5,30 @@
  Delete this file and get started with your project!
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
-import {TextBox, UiKit, MentorCard} from "@package/ui-kit";
+import { UiKit, MentorCard, Button } from '@package/ui-kit';
+
+const handleAlert = (name: string) => {
+  alert(`안녕하세요 ${name}님!`);
+};
 
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
       <UiKit />
-      <TextBox />
+      <Button
+        value={'이것은 버튼입니다.'}
+        rounded={'md'}
+        callback={() => handleAlert('테스터')}
+        palette={{
+          bgColor: 'bg-red-500', // 배경색 빨강
+          borderColor: 'border-blue-500', // 테두리 색상 파랑
+          textColor: 'text-white', // 텍스트 색상 흰색
+          hoverBgColor: 'hover:bg-red-600', // 호버 시 배경색
+          hoverBorderColor: 'hover:border-blue-600', // 호버 시 테두리 색상
+        }}
+      />
       <MentorCard />
+
       <style
         dangerouslySetInnerHTML={{
           __html: `

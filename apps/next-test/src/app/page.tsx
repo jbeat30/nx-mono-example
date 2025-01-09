@@ -1,4 +1,5 @@
-import {UiKit, MentorCard} from "@package/ui-kit";
+'use client'
+import {UiKit, MentorCard, Button} from "@package/ui-kit";
 
 export default function Index() {
   /*
@@ -6,10 +7,16 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.tailwind file.
    */
+
   return (
     <div>
       <UiKit />
       <MentorCard />
+      <Button
+        value={'이것은 버튼입니다2.'}
+        rounded={'md'}
+        callback={() => console.log('버튼 클릭')}
+      />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

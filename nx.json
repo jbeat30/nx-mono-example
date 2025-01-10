@@ -83,5 +83,6 @@
         "linter": "none"
       }
     }
-  }
+  },
+  "defaultBase": "main"
 }

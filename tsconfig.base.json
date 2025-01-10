@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@package/ui-kit": ["libs/ui-kit/src/index.ts"],
+      "@my-monorepo/next-ui": ["libs/next-ui/src/index.ts"],
+      "@my-monorepo/ui": ["libs/ui/src/index.ts"],
+      "@my-monorepo/ui/*": ["libs/ui/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

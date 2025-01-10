@@ -1,3 +1,6 @@
+import {MentorCard} from "@my-monorepo/next-ui";
+import {Button} from "@my-monorepo/ui";
+
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -46,6 +49,12 @@ export default function Index() {
               </svg>
             </div>
           </div>
+
+          <MentorCard />
+          <Button
+            value={'여긴 next: 버튼'}
+            rounded={'md'}
+          />
 
           <div id="middle-content">
             <div id="learning-materials" className="rounded shadow">

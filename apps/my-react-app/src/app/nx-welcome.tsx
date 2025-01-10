@@ -5,7 +5,27 @@
  Delete this file and get started with your project!
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
+import { Button,MentorCard } from '@my-monorepo/ui';
+
 export function NxWelcome({ title }: { title: string }) {
+  const handleAlert = (name: string) => {
+    // 숫자만 입력받기
+    const num = prompt('숫자를 입력해주세요.');
+    if (!num) {
+      alert('숫자를 입력해주세요.');
+      return;
+    }
+    if (isNaN(Number(num))) {
+      alert('숫자만 입력해주세요.');
+      return;
+    }
+
+    alert(
+      `안녕하세요 ${name}님! 입력하신 숫자는 ${num}이고, 2배한 값은 ${
+        Number(num) * 2
+      }입니다.`
+    );
+  };
   return (
     <>
       <style
@@ -467,6 +487,13 @@ export function NxWelcome({ title }: { title: string }) {
               </svg>
             </div>
           </div>
+
+          <MentorCard />
+          <Button
+            value={'여긴 react: 버튼'}
+            rounded={'md'}
+            callback={() => handleAlert('테스터')}
+          />
 
           <div id="middle-content">
             <div id="middle-content-container">

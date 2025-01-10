@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-monorepo/ui": ["libs/ui/src/index.ts"]
+      "@my-monorepo/ui": ["libs/ui/src/index.ts"],
+      "@my-monorepo/ui/*": ["libs/ui/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

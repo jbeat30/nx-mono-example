@@ -1,5 +1,4 @@
-import {MentorCard} from "@my-monorepo/next-ui";
-import {Button} from "@my-monorepo/ui";
+import {Button,MentorCard} from "@my-monorepo/ui";
 
 export default function Index() {
   /*
